@@ -4,9 +4,9 @@ import LogoComponent from "./LogoComponent";
 
 const NavBarComponent = () => {
     return (
-        <div className="flex justify-around mt-2">
+        <div className="container mx-auto px-4 flex items-center justify-evenly  bg-black">
             <LogoComponent/>
-            <ul className="flex justify-center gap-4 bg-red-100 w-1/3">
+            <ul className="flex justify-center items-center gap-4  w-1/3">
                 <li className="">Home</li>
                 <li className="">About</li>
                 <li className="">Blog</li>

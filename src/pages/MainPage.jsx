@@ -8,11 +8,13 @@ const MainPage = () => {
 
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="bg-black">
             <NavBarComponent/>
             <HeaderComponent/>
-            <NewsComponent/>
-            <CollectionNews/>
+            <div className="container mx-auto px-4">
+                <NewsComponent/>
+                <CollectionNews/>
+            </div>
         </div>
     )
 }

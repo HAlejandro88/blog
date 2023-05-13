@@ -3,7 +3,7 @@ import MainPage from "./pages/MainPage";
 
 const App = () => {
     return (
-        <div>
+        <div className="bg-black text-white">
             <MainPage/>
         </div>
     )
