@@ -1,5 +1,5 @@
 import NavBarComponent from "../components/NavBarComponent";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {useForm} from "../hooks/useForm";
 
 const PostPage = () => {
@@ -11,6 +11,8 @@ const PostPage = () => {
         description: "Lorem Ipsum es simplemente"
     }]
     const [posts, setPosts] = useState(initPost);
+    
+    console.log(posts)
 
     const [formValues, handleFormValues] = useForm(
         {
@@ -43,9 +45,10 @@ const PostPage = () => {
         open.style.display = 'none'
     }
 
+
     return (
         <div className="bg-black">
-            <NavBarComponent/>
+            <NavBarComponent search={setPosts} items={posts} />
             <main className="h-screen mt-5">
                 <h2 className="flex justify-center mb-5">Posts</h2>
 
